@@ -1,7 +1,7 @@
 settings:
   title: 'Status Page'
   url: 'https://status-page.eidam.dev' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
+  logo: logo-want-want.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
@@ -15,25 +15,43 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: R2-Storage # unique identifier
+    name: Image Hosting
+    description: 'Based on Cloudflare R2 Storage' # default=empty
+    url: 'https://pic.uua.app/mosaic.jpeg' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: ChatGPT-Next-Web
+    name: gpt.uua.app
+    description: 'You can use your own OpenAI API Key.'
+    url: 'https://gpt.uua.app'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: IP Config
+    name: ip.uua.app
+    description: 'Check your IP (nothing else)'
+    url: 'https://ip.uua.app'
     method: GET
     expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+  - id: URL Shortener
+    name: rzr.me
+    description: 'Easy URL shortener service. Attention! Short links created by visitors are valid only for a few minutes.'
+    url: 'https://rzr.me'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+  - id: URL Shortener
+    name: link.uua.app
+    description: 'Easy URL shortener service. Attention! Short links created by visitors are valid only for a few minutes.'
+    url: 'https://link.uua.app'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
