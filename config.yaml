@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: R2-Storage # unique identifier
-    name: Image Hosting
+    name: Image-Hosting
     description: 'Based on Cloudflare R2 Storage' # default=empty
     url: 'https://pic.uua.app/mosaic.jpeg' # URL to fetch
     method: GET # default=GET
@@ -25,25 +25,22 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: ChatGPT-Next-Web
-    name: gpt.uua.app
+    name: ChatGPT-Next-Web
     description: 'You can use your own OpenAI API Key.'
     url: 'https://gpt.uua.app'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
 
   - id: IP Config
-    name: ip.uua.app
+    name: IP-Config
     description: 'Check your IP (nothing else)'
     url: 'https://ip.uua.app'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
 
   - id: URL Shortener
-    name: rzr.me
+    name: URL-Shortener
     description: 'Easy URL shortener service. Attention! Short links created by visitors are valid only for a few minutes.'
     url: 'https://rzr.me'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
