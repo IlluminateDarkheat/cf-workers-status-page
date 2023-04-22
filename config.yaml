@@ -47,11 +47,3 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
-
-  - id: URL Shortener
-    name: link.uua.app
-    description: 'Easy URL shortener service. Attention! Short links created by visitors are valid only for a few minutes.'
-    url: 'https://link.uua.app'
-    method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
