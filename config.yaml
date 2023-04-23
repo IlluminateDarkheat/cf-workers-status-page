@@ -44,3 +44,10 @@ monitors:
     url: 'https://rzr.me'
     method: GET
     expectStatus: 200
+
+  - id: Blog
+    name: Blog
+    description: 'Welcome to microfeed, a lightweight content management system (CMS) self-hosted on Cloudflare.'
+    url: 'https://eveo.eu.org/'
+    method: GET
+    expectStatus: 200
