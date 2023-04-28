@@ -15,26 +15,33 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: R2-Storage # unique identifier
-    name: Image-Hosting
-    description: 'Based on Cloudflare R2 Storage' # default=empty
-    url: 'https://pic.uua.app/mosaic.jpeg' # URL to fetch
+  - id: Object Storage Service # unique identifier
+    name: R2 Storage
+    description: 'Cloudflare R2 Storage' # default=empty
+    url: 'https://cdn.uua.app/mosaic.jpeg' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
+  - id: Blog
+    name: Blog
+    description: 'Welcome to microfeed, a lightweight content management system (CMS) self-hosted on Cloudflare.'
+    url: 'https://eveo.eu.org/'
+    method: GET
+    expectStatus: 200
+
+  - id: Image-Hosting
+    name: Image-Hosting
+    description: 'Based on Telegraph and Cloudflare Pages'
+    url: 'https://pic.uua.app'
+    method: GET
+    expectStatus: 200
+
   - id: ChatGPT-Next-Web
     name: ChatGPT-Next-Web
     description: 'You can use your own OpenAI API Key.'
     url: 'https://gpt.uua.app'
-    method: GET
-    expectStatus: 200
-
-  - id: IP Config
-    name: IP-Config
-    description: 'Check your IP (nothing else)'
-    url: 'https://ip.uua.app'
     method: GET
     expectStatus: 200
 
@@ -45,9 +52,9 @@ monitors:
     method: GET
     expectStatus: 200
 
-  - id: Blog
-    name: Blog
-    description: 'Welcome to microfeed, a lightweight content management system (CMS) self-hosted on Cloudflare.'
-    url: 'https://eveo.eu.org/'
+  - id: IP Config
+    name: IP-Config
+    description: 'Check your IP (nothing else)'
+    url: 'https://ip.uua.app'
     method: GET
     expectStatus: 200
