@@ -24,12 +24,12 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: Blog
-    name: Blog
-    description: 'Welcome to microfeed, a lightweight content management system (CMS) self-hosted on Cloudflare.'
-    url: 'https://eveo.eu.org/'
-    method: GET
-    expectStatus: 200
+#  - id: Blog
+#    name: Blog
+#    description: 'Welcome to microfeed, a lightweight content management system (CMS) self-hosted on Cloudflare.'
+#    url: 'https://eveo.eu.org/'
+#    method: GET
+#    expectStatus: 200
 
   - id: Image-Hosting
     name: Image-Hosting
