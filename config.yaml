@@ -60,6 +60,13 @@ monitors:
     method: GET
     expectStatus: 200
 
+  - id: OpenAI Speedtest
+    name: OpenAI-Speedtest
+    description: 'OpenAI SSE speedtest by 500 tokens prompt.'
+    url: 'https://cdn.jghg.eu.org/doc/OpenAI_Speedtest.html'
+    method: GET
+    expectStatus: 200
+
   - id: GitHub Proxy
     name: GitHub-Proxy
     description: 'GitHub Reverse-proxy.'
