@@ -18,7 +18,7 @@ monitors:
   - id: Object Storage Service # unique identifier
     name: R2 Storage
     description: 'Cloudflare R2 Storage' # default=empty
-    url: 'https://cdn.uua.app/mosaic.jpeg' # URL to fetch
+    url: 'https://cdn.jghg.eu.org/img/mosaic.jpeg' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -34,14 +34,35 @@ monitors:
   - id: Image-Hosting
     name: Image-Hosting
     description: 'Based on Telegraph and Cloudflare Pages'
-    url: 'https://pic.uua.app'
+    url: 'https://pic.jghg.eu.org'
     method: GET
     expectStatus: 200
 
   - id: ChatGPT-Next-Web
     name: ChatGPT-Next-Web
     description: 'You can use your own OpenAI API Key.'
-    url: 'https://gpt.uua.app'
+    url: 'https://gpt.jghg.eu.org'
+    method: GET
+    expectStatus: 200
+
+  - id: Bing Chat Server
+    name: Sydney
+    description: 'Chat with Sydney with _U Cookie.'
+    url: 'https://newbing.jghg.eu.org'
+    method: GET
+    expectStatus: 200
+
+  - id: OpenAI Bill Check
+    name: OpenAI-Bill-Check
+    description: 'Check OpenAI Usage by API Key.'
+    url: 'https://openai-bill.jghg.eu.org'
+    method: GET
+    expectStatus: 200
+
+  - id: GitHub Proxy
+    name: GitHub-Proxy
+    description: 'GitHub Reverse-proxy.'
+    url: 'https://gh.jghg.eu.org/https://raw.githubusercontent.com/torvalds/linux/master/README'
     method: GET
     expectStatus: 200
 
@@ -55,6 +76,6 @@ monitors:
   - id: IP Config
     name: IP-Config
     description: 'Check your IP (nothing else)'
-    url: 'https://ip.uua.app'
+    url: 'https://ip.jghg.eu.org'
     method: GET
     expectStatus: 200
