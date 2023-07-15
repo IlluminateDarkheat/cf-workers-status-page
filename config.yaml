@@ -51,6 +51,7 @@ monitors:
     url: 'https://newbing.jghg.eu.org'
     method: GET
     expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
 
   - id: OpenAI Bill Check
     name: OpenAI-Bill-Check
