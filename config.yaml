@@ -23,6 +23,14 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
+    
+  - id: PrtSc Cloud
+    name: PrintScreen
+    description: 'Cloud Link of Windows PrintScreen'
+    url: 'https://prtsc.jghg.eu.org/2023/08/01/d544f6bf16e9304f30a3af414e5f0030.png'
+    method: GET
+    expectStatus: 200
+    linkable: false
 
 #  - id: Blog
 #    name: Blog
@@ -53,19 +61,19 @@ monitors:
     expectStatus: 200
     followRedirect: true # should fetch follow redirects, default=false
 
-  - id: OpenAI Bill Check
-    name: OpenAI-Bill-Check
-    description: 'Check OpenAI Usage by API Key.'
-    url: 'https://openai-bill.jghg.eu.org'
-    method: GET
-    expectStatus: 200
+#  - id: OpenAI Bill Check
+#    name: OpenAI-Bill-Check
+#    description: 'Check OpenAI Usage by API Key.'
+#    url: 'https://openai-bill.jghg.eu.org'
+#    method: GET
+#    expectStatus: 200
 
-  - id: OpenAI Speedtest
-    name: OpenAI-Speedtest
-    description: 'OpenAI SSE speedtest by 500 tokens prompt.'
-    url: 'https://cdn.jghg.eu.org/doc/OpenAI_Speedtest.html'
-    method: GET
-    expectStatus: 200
+#  - id: OpenAI Speedtest
+#    name: OpenAI-Speedtest
+#    description: 'OpenAI SSE speedtest by 500 tokens prompt.'
+#    url: 'https://cdn.jghg.eu.org/doc/OpenAI_Speedtest.html'
+#    method: GET
+#    expectStatus: 200
 
   - id: GitHub Proxy
     name: GitHub-Proxy
