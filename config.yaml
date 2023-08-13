@@ -39,13 +39,6 @@ monitors:
 #    method: GET
 #    expectStatus: 200
 
-  - id: Image-Hosting
-    name: Image-Hosting
-    description: 'Based on Telegraph and Cloudflare Pages'
-    url: 'https://pic.jghg.eu.org'
-    method: GET
-    expectStatus: 200
-
   - id: ChatGPT-Next-Web
     name: ChatGPT-Next-Web
     description: 'You can use your own OpenAI API Key.'
@@ -60,6 +53,27 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true # should fetch follow redirects, default=false
+
+  - id: Image-Hosting
+    name: Image-Hosting
+    description: 'Based on Telegraph and Cloudflare Pages'
+    url: 'https://pic.jghg.eu.org'
+    method: GET
+    expectStatus: 200
+
+  - id: URL Shortener
+    name: URL-Shortener
+    description: 'Easy URL shortener service. Attention! Short links created by visitors are valid only for a few minutes.'
+    url: 'https://rzr.me'
+    method: GET
+    expectStatus: 200
+
+  - id: StarBin
+    name: StarBin
+    description: 'Powered by hastebin. All pasted content will expire in one month.'
+    url: 'https://paste.jghg.eu.org'
+    method: GET
+    expectStatus: 200
 
 #  - id: OpenAI Bill Check
 #    name: OpenAI-Bill-Check
@@ -79,13 +93,6 @@ monitors:
     name: GitHub-Proxy
     description: 'GitHub Reverse-proxy.'
     url: 'https://gh.jghg.eu.org/https://raw.githubusercontent.com/torvalds/linux/master/README'
-    method: GET
-    expectStatus: 200
-
-  - id: URL Shortener
-    name: URL-Shortener
-    description: 'Easy URL shortener service. Attention! Short links created by visitors are valid only for a few minutes.'
-    url: 'https://rzr.me'
     method: GET
     expectStatus: 200
 
