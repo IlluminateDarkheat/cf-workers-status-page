@@ -46,13 +46,13 @@ monitors:
     method: GET
     expectStatus: 200
 
-  - id: Bing Chat Server
-    name: Sydney
-    description: 'Chat with Sydney with _U Cookie. https://github.com/adams549659584/go-proxy-bingai#设置用户'
-    url: 'https://newbing.jghg.eu.org'
-    method: GET
-    expectStatus: 200
-    followRedirect: true # should fetch follow redirects, default=false
+#  - id: Bing Chat Server
+#    name: Sydney
+#    description: 'Chat with Sydney with _U Cookie. https://github.com/adams549659584/go-proxy-bingai#设置用户'
+#    url: 'https://newbing.jghg.eu.org'
+#    method: GET
+#    expectStatus: 200
+#    followRedirect: true # should fetch follow redirects, default=false
 
   - id: Image-Hosting
     name: Image-Hosting
